@@ -1,0 +1,263 @@
+.header{
+	position: relative;
+	height: 650px;
+	background: #3035C4;
+}
+.header:after{
+	content: "";
+	width: 635px;
+	height: 690px;
+	background: url(../img/bg_header.png) 0 0 / cover no-repeat;
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.header__block{}
+
+.header__menu {
+	z-index: 2;
+}
+
+.header__menu-row {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	padding-top: 20px;
+}
+
+.header__block {
+	z-index: 2;
+}
+
+.header__logo {}
+
+.header__text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 14px;
+	max-width: 470px;
+	color: #FFFFFF;
+}
+
+.header__btn {}
+
+.header__btn button{
+	width: 213px;
+	height: 52px;
+	background: #E6514A;
+	border-radius: 30px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+.header__num {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 1px;
+	position: relative;
+	color: #3035C4;
+}
+
+.header__num:before{
+	content: "";
+	position: absolute;
+	background: url(../icon/phone.png) 0 0 no-repeat;
+	width: 20px;
+	height: 30px;
+	top: 0;
+	left: -25px;
+}
+
+.header__main {
+	padding-top: 190px;
+}
+
+.header__main-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	position: relative;
+	padding-left: 50px;
+	color: #FFFFFF;
+	position: relative;
+}
+
+.header__main-text:before{
+	content: "";
+	position: absolute;
+	background-color: #E6514A;
+	width: 40px;
+	height: 1px;
+	top: 7px;
+	left: 0;
+}
+
+.header__main-title {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 48px;
+	line-height: 130%;
+	max-width: 600px;
+	margin-left: 0px;
+	color: #FFFFFF;
+	margin-top: 25px;
+}
+
+.header__main-sub-title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	margin-top: 35px;
+	color: #FFFFFF;
+	max-width: 570px;
+}
+
+.header__main-btn {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-top: 35px;
+}
+
+.header__main-button {}
+
+.header__main-button button{
+	width: 305px;
+	height: 53px;
+	background: #E6514A;
+	border-radius: 30px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	color: #FFFFFF;
+}
+
+.header__main-btn-text {
+	padding-left: 20px;
+}
+
+.header__main-btn-text p:first-child{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 130%;
+	color: #FFFFFF;
+}
+
+.header__main-btn-text p:last-child{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 150%;
+	padding-top: 10px;
+	color: #FFFFFF;
+}
+
+
+@media(max-width: 768px) {
+	.header{
+		min-height: 670px;
+	}
+	.header:after{
+		display: none;
+	}
+	.header__menu-row{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		-ms-align-items: center;
+		align-items: center;
+	}
+	.header__text{
+		text-align: center;
+		margin-top: 15px;
+	}
+	.header__main{
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	.header__main{
+		padding-right: 10px;
+	}
+	.header__text{
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.header__btn{
+		padding-top: 20px;
+	}
+}
+@media(max-width: 589px) {
+	.header__main-btn{
+		display: block;
+	}
+	.header__main-btn-text{
+		padding-top: 10px;
+	}
+}
+@media(max-width: 528px) {
+	.header__main-title{
+		font-size: 35px;
+	}
+}
+@media(max-width: 492px) {
+	.header__main-sub-title{
+		font-size: 15px;
+	}
+}
+@media(max-width: 375px) {
+	.header__main-title{
+		font-size: 30px;
+	}
+	.header__main-button button{
+		max-width: 280px;
+	}
+}
+@media(max-width: 327px) {
+	.header__main-title{
+		font-size: 23px;
+	}
+}
